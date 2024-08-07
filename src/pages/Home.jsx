@@ -84,7 +84,7 @@ const Home = () => {
           <div className="flex items-center justify-center">
             {drink.length > 0 ? (
               <section className="mt-24">
-                <div className="container mx-auto grid medium:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="container max-w-[1000px] mx-auto grid medium:grid-cols-2 lg:grid-cols-3 gap-6">
                   {drink.map((item) => (
                     <Card key={item.idDrink} {...item} />
                   ))}

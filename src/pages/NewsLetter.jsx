@@ -6,13 +6,13 @@ const NewsLetter = () => {
   const [news, setNews] = useState('');
   const notify = () => toast('Thanks, You Subscribed');
   function handleClick() {
-    if(!news) return
+    if (!news) return;
     setNews('');
     notify();
   }
 
   return (
-    <section className="mt-8 flex flex-col items-center  font-main bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto">
+    <section className="mt-8 flex flex-col items-center font-main bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto">
       <label htmlFor="email" className="text-xl mb-4">
         Subscribe to our Newsletter
       </label>
